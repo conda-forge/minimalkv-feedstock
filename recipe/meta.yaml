@@ -1,5 +1,5 @@
 {% set name = "minimalkv" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/minimalkv-{{ version }}.tar.gz
-  sha256: eea18f5af51a7c13442ab5d068c5d3b09a52fabe290a80fe4aa5a0d067343d9c
+  sha256: 242659af1b2494beb1a98491cd50a9ce9b8403f0019c12aa9b099b1c431a57ef
 
 build:
   number: 0
@@ -22,6 +22,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.7
+    - uritools
 
 test:
   imports:
