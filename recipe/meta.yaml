@@ -11,17 +11,17 @@ source:
   sha256: 7068b6f005782d12d762b1c344aee32b785cb1231e813a60df05bcef7783cf4e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.6
     - setuptools_scm
   run:
-    - python >=3.7
+    - python >=3.6
     - uritools
 
 test:
