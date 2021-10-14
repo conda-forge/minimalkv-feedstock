@@ -11,7 +11,7 @@ source:
   sha256: c6d3acafa14e3594eeca93e907b32123719214f3605d98548afb75b1770e8b2d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,6 +23,8 @@ requirements:
   run:
     - python >=3.6
     - uritools
+  run_constrained:
+    - google-cloud-storage >=1.31.0
 
 test:
   imports:
