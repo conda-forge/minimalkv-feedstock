@@ -23,6 +23,7 @@ requirements:
   run:
     - python >=3.6
     - uritools
+  run_constrained:
     - google-cloud-storage >=1.31.0
 
 test:
