@@ -1,5 +1,5 @@
 {% set name = "minimalkv" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/minimalkv-{{ version }}.tar.gz
-  sha256: e58ee7960c7dcb36adddf4134d8d42744bc275f00cff548f8fa8176a94056442
+  sha256: 950c9375c09cceab9470f7c8c2556128e65d348078674e58d96272766e0d58d0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,7 +22,6 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.8
-    - gcsfs
     - uritools
   run_constrained:
     - google-cloud-storage >=1.31.0
