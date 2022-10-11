@@ -11,7 +11,7 @@ source:
   sha256: e58ee7960c7dcb36adddf4134d8d42744bc275f00cff548f8fa8176a94056442
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,6 +22,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.8
+    - gcsfs
     - uritools
   run_constrained:
     - google-cloud-storage >=1.31.0
