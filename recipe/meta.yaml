@@ -11,7 +11,7 @@ source:
   sha256: fcc441969dd2a9febefd09429ec64d377f5776faed54954adf5037f7edac4f86
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -31,6 +31,8 @@ test:
     - minimalkv
   commands:
     - pip check
+    - python -c 'from minimalkv import get_store; get_store("fs", path=".")'
+    - python -c 'from minimalkv import get_store; get_store("hfs", path=".")'
   requires:
     - pip
 
