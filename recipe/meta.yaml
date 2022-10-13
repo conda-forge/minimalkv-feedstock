@@ -1,5 +1,5 @@
 {% set name = "minimalkv" %}
-{% set version = "1.4.2" %}
+{% set version = "1.4.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/minimalkv-{{ version }}.tar.gz
-  sha256: fcc441969dd2a9febefd09429ec64d377f5776faed54954adf5037f7edac4f86
+  sha256: 2a26de11d792095802a18c3acd55b82ff2945a6eec14329cd0d954598ffd4829
 
 build:
   number: 0
@@ -31,6 +31,8 @@ test:
     - minimalkv
   commands:
     - pip check
+    - python -c 'from minimalkv import get_store; get_store("fs", path=".")'
+    - python -c 'from minimalkv import get_store; get_store("hfs", path=".")'
   requires:
     - pip
 
