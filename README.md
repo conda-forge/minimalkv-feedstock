@@ -144,6 +144,7 @@ Feedstock Maintainers
 =====================
 
 * [@fjetter](https://github.com/fjetter/)
+* [@jtilly](https://github.com/jtilly/)
 * [@mlondschien](https://github.com/mlondschien/)
 * [@siboehm](https://github.com/siboehm/)
 * [@xhochy](https://github.com/xhochy/)
