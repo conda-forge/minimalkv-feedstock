@@ -1,11 +1,11 @@
-About minimalkv
-===============
+About minimalkv-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/minimalkv-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/data-engineering-collective/minimalkv
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/minimalkv-feedstock/blob/main/LICENSE.txt)
 
 Summary: A key-value storage for binary data, support many backends.
 
