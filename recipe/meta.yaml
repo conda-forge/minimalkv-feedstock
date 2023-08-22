@@ -1,5 +1,5 @@
 {% set name = "minimalkv" %}
-{% set version = "1.6.1" %}
+{% set version = "1.8.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/minimalkv-{{ version }}.tar.gz
-  sha256: b14b7d60cc184ea6518b1c77de1e5a1a670d74dedfcfb269151d3c9f8354d3a0
+  sha256: c877433ca4f06d1b40c36cce9b4e06ccec432606df20a9a9f9c450a9faabfa13
 
 build:
   number: 0
