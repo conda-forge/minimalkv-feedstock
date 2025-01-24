@@ -149,6 +149,3 @@ Feedstock Maintainers
 * [@siboehm](https://github.com/siboehm/)
 * [@xhochy](https://github.com/xhochy/)
 
-
-<!-- dummy commit to enable rerendering -->
-
