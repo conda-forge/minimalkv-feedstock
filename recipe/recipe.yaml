@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: minimalkv
-  version: 1.11.1
+  version: 1.11.2
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/minimalkv-${{ version }}.tar.gz
-  sha256: 9e4cdd001d04f00c512afd3c8ee61ecde1e2ad31249426288cf5beb6054ad93b
+  sha256: b710496ef0de373eaf084c6d511fff0b4a50099e85fe52dc4e2745fe885d6861
 
 build:
   number: 0
